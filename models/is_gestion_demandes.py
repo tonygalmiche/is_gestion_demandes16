@@ -33,7 +33,7 @@ class is_gestion_demandes_application(models.Model):
 
 class is_gestion_demandes(models.Model):
     _name = 'is.gestion.demandes'
-    # _inherit=['mail.thread']
+    _inherit=['mail.thread']
     _description = "Gestion des demandes pour Plastigray"
     _order='name desc'
 
